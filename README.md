@@ -1,4 +1,5 @@
-# f9-ionic-webrtc
+# f9 Matching Squares
+
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -25,7 +26,7 @@
 
 ## Description
 
-A Ionic Seed Project
+A simple memory game
 
 ## Version
 
@@ -37,13 +38,13 @@ The current version of the app is:
 
 ## Project Objectives
 
-Attempting to create a definitive seed app.
+To make a simple educational game
 
 
 ## Installation
 
 ```
-$ git clone git@github.com:russellf9/f9-ionic-seed && cd f9-ionic-seed
+$ git clone git@github.com:russellf9/f9-matching-squares && cd f9-matching-squares
 
 # update node dependencies
 $ npm update
