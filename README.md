@@ -69,7 +69,9 @@ v0.12.0
 ## Cordova
 
 ```
-# Not sure if I need this - the bower/node updates might be enough?
+# To create the initial www folder structure
+# (Avoids the `Current working directory is not a Cordova-based project.` error)
+
 $ cordova platform add ios
 
 ```
@@ -84,6 +86,7 @@ See: [Browser as a platform for your PhoneGap/Cordova apps](http://www.raymondca
 ```
 # to add the Browser platform
 # this builds from the current state of the www folder
+# (Note: the www folder has to be built first)
 $ cordova platform add browser --usegit
 
 # to run - kill Chrome, and then type
@@ -102,6 +105,8 @@ $ ionic platform ios
 $ ionic build ios
 
 # modify as per instructions
+
+```
 
 
 ## Gulp Commands
