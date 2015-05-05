@@ -1,8 +1,20 @@
 'use strict';
 
-angular.module('f9-webrtc', ['ionic', 'ngDragDrop', 'angular.filter', 'f9-webrtc.controllers', 'btford.socket-io'])
+angular.module('f9-matching-squares', ['ionic', 'ngDragDrop', 'angular.filter', 'btford.socket-io'])
+
+
+    //.controller('MainCtrl', ['$scope',
+    //    function($scope) {
+    //        $scope.data = {};
+    //        $scope.loading = false;
+    //
+    //        console.log('main 21:10!');
+    //    }])
+
 
     .config(function($stateProvider, $urlRouterProvider) {
+
+        console.log('hi!');
 
         $stateProvider
             .state('app', {
@@ -10,23 +22,12 @@ angular.module('f9-webrtc', ['ionic', 'ngDragDrop', 'angular.filter', 'f9-webrtc
                 abstract: true,
                 templateUrl: 'partials/app.html'
             })
-            .state('app.login', {
-                url: '/login',
-                controller: 'LoginCtrl',
-                templateUrl: 'partials/login.html'
-            })
-            .state('app.contacts', {
-                url: '/contacts',
-                controller: 'ContactsCtrl',
-                templateUrl: 'partials/contacts.html'
-            })
-            .state('app.call', {
-                url: '/call/:contactName?isCalling',
-                controller: 'CallCtrl',
-                templateUrl: 'partials/call.html'
+            .state('app.main', {
+                url: '/main',
+                controller: 'MainCtrl',
+                templateUrl: 'partials/main.html'
             });
-
-        $urlRouterProvider.otherwise('/app/login');
+        $urlRouterProvider.otherwise('/app/main');
     })
 
 
